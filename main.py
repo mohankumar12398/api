@@ -1,6 +1,5 @@
-# This is a sample Python script.
+from flask import Flask
+from flask_cors import CORS
 
-def fun(name,sub):
-    print("HI,HELLO welcome to my tutorial.My name",name)
-    print("I am",sub)
-fun("mohan","web developer")
+app = Flask(__name__)
+CORS(app)
